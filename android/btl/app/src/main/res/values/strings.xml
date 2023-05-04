@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">btl</string>
+    <string-array name="category">
+        <item>Món ngon Việt Nam</item>
+        <item>Món ngon Châu Á</item>
+        <item>Món ngon Châu Âu</item>
+    </string-array>
+</resources>
