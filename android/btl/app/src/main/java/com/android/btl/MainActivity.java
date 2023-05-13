@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txt_logout = findViewById(R.id.txt_logout);
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
-        txt_user.setText("user: "+ user.getEmail());
+        txt_user.setText( user.getEmail());
 
         txt_logout.setOnClickListener(this);
     }

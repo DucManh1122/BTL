@@ -27,6 +27,7 @@ public class RatingHistoryActivity extends AppCompatActivity implements RViewPos
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rating_history);
+        getSupportActionBar().hide();
         initView();
     }
     private void initView() {

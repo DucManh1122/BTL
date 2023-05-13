@@ -38,6 +38,7 @@ public class UpdateAndDeletePostActivity extends AppCompatActivity implements Vi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_and_delete_post);
+        getSupportActionBar().hide();
         getIntentData();
         initView();
     }

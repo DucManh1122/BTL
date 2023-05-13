@@ -56,6 +56,7 @@ public class PostDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_detail);
+        getSupportActionBar().hide();
         getIntentData();
         initView();
     }
@@ -87,7 +88,7 @@ public class PostDetailActivity extends AppCompatActivity {
         Picasso.get().load(item.getImage()).into(image);
         title.setText(item.getTitle());
         content.setText(item.getContent());
-        date.setText(item.getDate());
+        date.setText("Ngày đăng: "+item.getDate());
         user.setText(item.getUser());
         views.setText(item.getViews());
         category.setText(item.getCategory());

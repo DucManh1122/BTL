@@ -27,6 +27,7 @@ public class ViewHistoryActivity extends AppCompatActivity implements RViewPostA
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_history);
+        getSupportActionBar().hide();
         initView();
     }
     private void initView() {

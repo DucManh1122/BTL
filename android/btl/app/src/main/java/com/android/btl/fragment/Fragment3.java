@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,7 +19,7 @@ import com.android.btl.ViewHistoryActivity;
 
 
 public class Fragment3 extends Fragment implements View.OnClickListener{
-    private Button btn_my_post,btn_my_rating,btn_view_history;
+    private LinearLayout btn_my_post,btn_my_rating,btn_view_history;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

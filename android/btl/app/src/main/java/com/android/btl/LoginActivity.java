@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity implements  View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().hide();
         initView();
     }
 
@@ -105,13 +106,13 @@ public class LoginActivity extends AppCompatActivity implements  View.OnClickLis
             startActivityForResult(intent, REQUEST_CODE_REGISTER);
         }
         else if (v == resetPassword) {
-            mAuth.sendPasswordResetEmail(txtemail.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+            mAuth.sendPasswordResetEmail(txtemail.getText().toString().trim()).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "An email has been sent to you.", Toast.LENGTH_LONG).show();
                     } else {
-
+                        Toast.makeText(LoginActivity.this, "Email không tồn tại", Toast.LENGTH_SHORT).show();
                     }
                 }
             }).addOnFailureListener(new OnFailureListener() {

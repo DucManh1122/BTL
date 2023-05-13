@@ -5,12 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/detail_post_bg"
     tools:context=".UpdateAndDeletePostActivity">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="16dp"
             android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#9C27B0"
             android:text="Chỉnh sửa bài đăng"/>
         <ScrollView
             android:layout_width="match_parent"
@@ -21,11 +24,15 @@
                 android:orientation="vertical">
                 <TextView
                     android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Tiêu đề bài viết:"/>
                 <EditText
                     android:id="@+id/tv_title"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:lines="2"
@@ -34,33 +41,47 @@
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     android:text="Hình ảnh:"/>
                 <EditText
                     android:id="@+id/tv_img"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     />
                 <TextView
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_height="wrap_content"
                     android:text="Video:"/>
                 <EditText
                     android:id="@+id/tv_video"
                     android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_height="wrap_content"
                     />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
                     android:orientation="horizontal">
                     <TextView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_height="wrap_content"
                         android:text="Danh mục:"/>
                     <Spinner
                         android:id="@+id/spCategory"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
                         android:padding="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -70,34 +91,46 @@
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     android:text="Nội dung:"/>
                 <EditText
                     android:id="@+id/tv_content"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     android:inputType="text|textMultiLine"
                     />
                 <TextView
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     android:text="Ngày thêm:"/>
                 <EditText
                     android:id="@+id/tv_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
                     />
                 <LinearLayout
                     android:weightSum="2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
                     <Button
                         android:layout_weight="1"
                         android:id="@+id/btn_update"
                         android:layout_width="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_height="wrap_content"
                         android:text="Cập nhật"
+                        android:background="@drawable/btn_background"
                         android:gravity="center"
                         />
                     <Button
@@ -105,7 +138,10 @@
                         android:id="@+id/btn_delete"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/btn_background"
                         android:text="Xóa"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
                         android:gravity="center"
                         />
 
